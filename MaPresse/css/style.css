@@ -2,7 +2,7 @@ body{
     background-color: #525252;
 }
 .centered-form{
-	margin-top: 60px;
+	margin-top: 120px;
 }
 
 .centered-form .panel{
@@ -14,10 +14,31 @@ body{
     margin-top: 100px;
 }
 
-#identifiant {
+#username {
     width: 328px;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+.dropdown-menu .sub-menu {
+  left: 100%;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  margin-top: -1px;
+}
+
+#login {
+    width: 360px;
+    margin-left: 405px;
+}
+
+.panel-default p {
+    margin-top: 10px;
 }
