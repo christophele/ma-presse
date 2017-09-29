@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="iso-8859-1">
         <title></title>
         <style type="text/css">
             .hide-rss {
@@ -12,13 +12,14 @@
     <body>
         <div id="rss-express-sport" class="hide-rss">
             <?php
-            $url = "http://www.lexpress.fr/rss/sport.xml ";
+            $url = "http://www.lexpress.fr/rss/sport.xml";
             $rss = simplexml_load_file($url);
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -30,8 +31,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -43,8 +45,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -56,8 +59,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -71,8 +75,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -85,8 +90,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -99,8 +105,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -113,8 +120,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -127,8 +135,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -143,8 +152,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -157,8 +167,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -171,8 +182,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -187,8 +199,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -201,8 +214,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -215,8 +229,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -229,8 +244,9 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
@@ -243,11 +259,13 @@
             echo '<ul>';
             foreach ($rss->channel->item as $item){
              $datetime = date_create($item->pubDate);
+             echo '</br></br>';
              $date = date_format($datetime, 'd M Y, H\hi');
-             echo '<li><a href="'.$item->link.'">'.utf8_decode($item->title).'</a> ('.$date.')</li>';
+             echo '<li><a href="'.$item->link.'">'.mb_convert_encoding($item->title,"utf-8").'</a> ('.$date.')</li>';
             }
             echo '</ul>';
             ?>
         </div>
+
     </body>
 </html>

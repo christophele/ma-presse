@@ -1,6 +1,10 @@
 body{
-    background-color: #525252;
+    /*background-color: #525252;*/
+    font: 14px sans-serif;
+    text-align: center;
+    padding-top: 24px;
 }
+
 .centered-form{
 	margin-top: 120px;
 }
@@ -34,11 +38,14 @@ body{
   margin-top: -1px;
 }
 
-#login {
-    width: 360px;
-    margin-left: 405px;
+.modal-backdrop {
+  z-index: -1;
 }
 
-.panel-default p {
-    margin-top: 10px;
+ul {
+    list-style-type: none;
+}
+
+.hide-rss {
+    font-size: 15px;
 }
