@@ -1,40 +1,27 @@
 $(function() {
     $(".panel-default").hide();
     $(".hide-rss").hide();
+    $("body").css("background-color", "white");
 
-    // var all_spans = $('.dropdown-menu li a').parent().find('span');
-    //
-    // $('.dropdown-menu li a').click(function(e){
-    // e.preventDefault();
-    // // hide all span
-    // all_spans.hide();
-    // $this = $(this).parent().find('span');
-    // // here is what I want to do
-    // if ($this.is(':hidden')) {
-    //      $(this).parent().find('.hide-rss').show();
-    // } else {
-    //      $(this).parent().find('.hide-rss').hide();
-    // }
-    // });
-    // $("#btn-register").click(function() {
-    //     $("#register").show();
-    //     $("#login").hide();
-    // });
-    //
-    // $("#btn-login").click(function() {
-    //     $("#login").show();
-    //     $("#register").hide();
-    // });
+    $("#btn-register").click(function() {
+        $("#register").show();
+        $("#login").hide();
+    });
 
-    // $("#login-now").click(function() {
-    //     $("#register").hide();
-    //     $("#login").show();
-    // });
-    //
-    // $("#register-now").click(function() {
-    //     $("#login").hide();
-    //     $("#register").show();
-    // });
+    $("#btn-login").click(function() {
+        $("#login").show();
+        $("#register").hide();
+    });
+
+    $("#login-now").click(function() {
+        $("#register").hide();
+        $("#login").show();
+    });
+
+    $("#register-now").click(function() {
+        $("#login").hide();
+        $("#register").show();
+    });
 
     $(".dropdown-menu li a span").click(function(e){
         e.preventDefault();
